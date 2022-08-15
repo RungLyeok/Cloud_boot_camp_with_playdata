@@ -1,6 +1,5 @@
 # **studying_network**
 
----
 
 playdata 클라우드 부트캠프의 첫 수업은 네트워크에 대해서 진행하였다.
 
