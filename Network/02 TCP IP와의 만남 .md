@@ -1,3 +1,14 @@
+<style type="text/css">
+.mt {
+   width: 800px; 
+   border-radius: 7px;
+   moz-border-radius: 7px;
+   khtml-border-radius: 7px;
+   webkit-border-radius: 7px;
+   test-align : center;
+}
+</style>
+
 # 02 TCP/IP와의 만남
 
 ---
@@ -9,6 +20,8 @@
 ### 1-1. 네트워킹 ( Networking )
 
 장비들을 서로 대화(정보 공유)가 가능하도록 묶어주는 것
+
+<br>
 
 ### 1-2. 인터넷 ( Internet )
 
@@ -23,9 +36,15 @@
 2. 웹 브라우저를 이용한다.
 3. 인터넷에는 정보가 넘친다.
 
+<br>
+
+
 ### 1-3. 인트라넷 ( IntraNet )
 
 내부 네트워크, 특정 회사의 사람들에게만 사용이 허가된 사내 네트워크
+
+<br>
+
 
 ### 1-4. 엑스트라넷 ( ExtraNet )
 
@@ -39,6 +58,12 @@
 
  
 
+<br>
+
+
+<br>
+
+
 ## 2. 네트워크와 케이블, OSI 7 Layer
 
 ---
@@ -50,6 +75,9 @@
 **WAN ( Wide Area Network )** 
 
 멀리 떨어진 곳을 네트워크로 연결하는 것
+
+<br>
+
 
 ### 2-2. 데이터 네트워크
 
@@ -75,13 +103,17 @@ Collision Detection ( 충돌 감지 ) : 네트워크 상에 충돌이 발생했�
 
 단점 : 다른 PC들이 보낼 데이터가 하나도 없더라도 토큰이 나에게 올 때 까지 기다려야한다.
 
+<br>
+
+
 ### 2-3. 케이블 종류
 
 **1) UTP 케이블 ( Unshielded Twisted-pair )**
 
 감싸지 않은 두 가닥을 꼬은 케이블
 
-![Untitled](02%20TCP%20IP%E1%84%8B%E1%85%AA%E1%84%8B%E1%85%B4%20%E1%84%86%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1%E1%86%B7%205d33a661ae244ed6b11930a935db3762/Untitled.png)
+<img class="mt" withd="800" src="https://github.com/RungLyeok/Cloud_boot_camp_with_playdata/blob/main/Network/images/02%20TCP%20IP%EC%99%80%EC%9D%98%20%EB%A7%8C%EB%82%A8/Untitled.png?raw=true ">
+
 
 - 카테고리1 : 주로 전화망에 사용하는 용도로 만들어진 케이블, 데이터 전송용 X
 - 카테고리2 : 데이터를 최대 4Mbps의 속도로 전송할 수 있는 능력을 가지고 있는 케이블
@@ -115,6 +147,9 @@ Collision Detection ( 충돌 감지 ) : 네트워크 상에 충돌이 발생했�
     
     5 : 화이트 블루      6 : 그린     7 : 화이트 브라운  8 : 브라운
     
+<br>
+
+
 
 ### 2-4. 맥 어드레스 ( Mac Address )
 
@@ -135,6 +170,9 @@ MAC 주소 표현방법 : 앞 6자리는 생산자(OUI), 뒤 6자리는 시리�
 00:60:97:8F:4F:86
 
 0060.978F.4F86
+
+<br>
+
 
 ### 2-5. 유니캐스트, 브로드캐스트, 멀티캐스트
 
@@ -159,18 +197,21 @@ CPU에서 패킷을 처리해야 되기 때문에 성능의 저하가 생긴다.
 보내고자 하는 그룹 멤버들에게만 한 번에 통신 
 
 > 💡**정리**
-유니캐스트 : 특정한 한 PC에게만 보내는 방식, 가장 많이 사용
-
+>유니캐스트 : 특정한 한 PC에게만 보내는 방식, 가장 많이 사용
+>
 브로드캐스트 : 브로드캐스트 도메인 아에 있는 모든 PC들에게 한 번에 전송하는 방식, PC의 성능이 떨어진다는 단점이 있다.
-
+>
 멀티캐스트 : 특정 그룹에게 데이터를 보내는 방식, 스위치나 라우터가 멀티캐스트 기능을 지원해야한다.
 > 
+
+<br>
+
 
 ### 2-6. OSI 7 Layer
 
 OSI ( Open Systems Interconnection ) , 통신을 7개의 단계별로 표준화하여 그 효율성을 높이기 위해 사용 되었다.
 
-![Untitled](02%20TCP%20IP%E1%84%8B%E1%85%AA%E1%84%8B%E1%85%B4%20%E1%84%86%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1%E1%86%B7%205d33a661ae244ed6b11930a935db3762/Untitled%201.png)
+<img class="mt" withd="800" src="https://github.com/RungLyeok/Cloud_boot_camp_with_playdata/blob/main/Network/images/02%20TCP%20IP%EC%99%80%EC%9D%98%20%EB%A7%8C%EB%82%A8/Untitled%201.png?raw=true">
 
 - **Application Layer ( 애플리케이션 계층 )**
     - 일반적으로 사용하는 웹 브라우저, 어플 등등
@@ -197,6 +238,9 @@ OSI ( Open Systems Interconnection ) , 통신을 7개의 단계별로 표준화�
     - 통신 단위 : 비트 / 케이블, 리피터, 허브
     
 
+<br>
+
+
 ### 2-7. Protocol
 
 컴퓨터끼리 서로 통신하기 위해서 꼭 필요한 서로 간의 통신 규약 또는 통신 방식에 대한 약속, 프로토콜이 같은 것끼리만 대화, 즉 통신이 가능하다.
@@ -218,21 +262,27 @@ IP계층을 사용하면서 그 위에 프로토콜을 TCp로 사용한다는 �
 
 2) IPX (Internetwork Packet eXchange)
 
+<br>
+
+
+<br>
+
+
 ## 3. TCP / IP 와의 만남
 
 ---
 
 ### 3-1. 이 세상에서 나만을 위한 유일한 것 ( IP주소 )
 
-<aside>
-💡 **IP 확인하는 방법**
-CMD 창에서 `ipconfig/all` 입력
 
+> 💡 **IP 확인하는 방법**
+CMD 창에서 `ipconfig/all` 입력
+>
 **IP 생김새**
 10.139.4.36
 IP는 이진수(32자리)로 만들어졌기 떄문에 0~255 숫자만 사용가능하다.
 
-</aside>
+
 
 만약 다른 사람과 IP주소가 같게 된다면 IP 주소가 서로 충돌하기 때문에 둘 중 하나는 인터넷을 못쓰는 결과를 가져온다.
 
@@ -243,6 +293,9 @@ IP는 이진수(32자리)로 만들어졌기 떄문에 0~255 숫자만 사용가
 공인 주소를 나눠주고 관리해주는 기관이 바로 **NIC( Network Information Center )**이다.
 
 IP 주소는 원래 이진수로 되어 있는데, 사람들이 이해하기 쉬우라고 십진수를 만들어서 쓰고 있다. 그리고 우리가 현재 사용하는 IP 주소 방식은 버전 4로, 이제 주소가 부족해서 앞으로는 버전 6이 사용될 에정이다.
+
+<br>
+
 
 ### 3-2. 이진수
 
